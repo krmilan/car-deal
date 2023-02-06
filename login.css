@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    transition:all 0.3s;
+    
+}
+
+/* Global Variable */
+:root {
+    --main: #ff580aed;
+    --black: #000;
+    --white: #fff;
+}
+body {
+    background: var(--black);
+    color: var(--white) !important;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+}
+*::selection{
+    background: var(--black);
+    color: var(--white) !important;
+}
+
+/* Navbar Section Start */
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-brand {
+    font-family: "Poppins";
+    font-size: 3em;
+    padding: 0px 80px;
+    font-weight: 600;
+    color: var(--white) !important;
+    text-decoration: none;
+}
+.navbar-brand span {
+    font-size: 1.3em;
+    color: var(--main) !important;
+    font-weight: 900;
+}
+.navbar-nav {
+    padding: 0px 80px;
+    margin-top: 30px;
+}
+/* Navbar Section End*/
+
+.container {
+    width: 380px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px var(--main);
+}
+.header {
+    text-align: center;
+    padding-top: 75px;
+}    
+.header h1 {
+    color: var(--main);
+    font-size: 45px;
+    margin-bottom: 80px;
+}
+.main {
+    text-align: center;
+}
+.main input, button {
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+
+.main button {
+    padding-left: 0;
+    background-color: var(--main);
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 70px;
+    text-decoration: none;
+}
+.main button:hover {
+    box-shadow: 2px 2px 5px #555;
+    background-color: #7799d4;
+}
+.main input:hover {
+    box-shadow: 2px 2px 5px #555;
+    background-color: #ddd;
+}
+
+.main span {
+    position: relative;
+}
+.main i{
+    position: absolute;
+    left: 15px;
+    color: #333;
+    font-size: 16px;
+    top: 2px;
+}

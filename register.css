@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    transition:all 0.3s;
+    
+}
+
+/* Global Variable */
+:root {
+    --main: #ff580aed;
+    --black: #000;
+    --white: #fff;
+}
+body {
+    background: var(--black);
+    color: var(--white) !important;
+    background-image: url(lambochrome.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+}
+*::selection{
+    background: var(--black);
+    color: var(--white) !important;
+}
+
+/* Navbar Section Start */
+.navbar{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-brand {
+    font-family: "Poppins";
+    font-size: 3em;
+    padding: 0px 80px;
+    font-weight: 600;
+    color: var(--white) !important;
+    text-decoration: none;
+}
+.navbar-brand span {
+    font-size: 1.3em;
+    color: var(--main) !important;
+    font-weight: 900;
+}
+.navbar-nav {
+    padding: 0px 80px;
+    margin-top: 30px;
+}
+/* Navbar Section End*/
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--main);
+    margin: auto;
+    margin-bottom:318px;
+}
+.container .title {
+    color: var(--main);
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+}
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input input:focus,
+.user-details .input-box input input:valid{
+    border-color: #9b59b6;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: var(--main);
+
+}
+.user-details span{
+position: relative;
+color: var(--black);
+}
+
+/*Footer Section Start*/
+footer{
+    position:relative;
+    background: var(--main);
+    text-align: center;
+    padding: 20px;
+
+    
+}
+footer a{
+    color: var(--white) !important;
+    text-decoration: none !important;
+}
+/*Footer Section End*/
